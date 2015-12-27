@@ -1,53 +1,17 @@
-title:            Brian Lam
-tagline:          
-description:     
-canonical: http://brianlam.io
+# Site settings
+title: Clean Blog
+header-img: img/home-bg.jpg
+email: your-email@yourdomain.com
+description: "Write your site description here. It will be used as your sites meta description as well!"
+baseurl: "/startbootstrap-clean-blog-jekyll"
+url: "http://yourdomain.com"
+twitter_username: SBootstrap
+github_username:  davidtmiller
+facebook_username:  IronSummitMedia
 
-# Owner/author information
-owner:
-  name:           Brian Lam
-  avatar:         avatar.png
-  bio:            
-  email:          brianlam@cs.stanford.edu
-  twitter:        _brianlam
-  github:         lambrian
-  instagram:      _brianlam
-  location:       "San Francisco"
-  # Plug in your disqus shortname!
-
-tools:
-  standards:      "HTML, SCSS, Jekyll"
-  software:       "git"
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/Los_Angeles
-future:      true
+# Build settings
+markdown: kramdown
 highlighter: pygments
-markdown:    kramdown
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers:
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-sass:
-    style: :compressed
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
